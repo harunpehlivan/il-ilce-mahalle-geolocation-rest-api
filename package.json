@@ -9,7 +9,9 @@
     "test": "npm run lint && mocha ./test/**/*.spec.js --timeout 20000 --require babel-register",
     "lint": "eslint ./src/**/*.js --fix",
     "clean": "rm -rf build && mkdir build",
-    "build": "npm run clean && babel -d ./build ./src -s"
+    "build": "npm run clean && babel -d ./build ./src -s",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "il ilçe",
@@ -27,7 +29,8 @@
     "mongodb": "^3.1.0-beta4",
     "morgan": "^1.9.0",
     "winston": "^3.0.0-rc6",
-    "winston-transport": "^4.1.0"
+    "winston-transport": "^4.1.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -40,5 +43,6 @@
     "eslint-plugin-import": "^2.12.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.17.5"
-  }
+  },
+  "snyk": true
 }
