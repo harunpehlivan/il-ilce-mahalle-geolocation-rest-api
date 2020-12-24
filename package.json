@@ -21,7 +21,7 @@
   "author": "Melih Korkmaz - melihkorkmaz84@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "mongodb": "^3.1.0-beta4",
